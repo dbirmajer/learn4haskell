@@ -9,7 +9,7 @@ We appreciate your curiosity and will try to provide you with all the necessary
 equipment for your training before the battle in the real FP world. Learning
 Functional Programming can be challenging. But we designed this training to be
 beginner-friendly and helpful to everyone!
-
+    
 Practice your functional skills, and choose your class in the end, who you want
 to become: Monad Wizard, Exceptions Crusher, Recursion Priest, Free Fighter,
 Composition Warlock, and many more!
@@ -221,19 +221,19 @@ A pair of boolean and char:
 
 Boolean negation:
 >>> :t not
-<INSERT THE RESULT INSTEAD OF THE TEXT>
+True :: Bool
 
 Boolean 'and' operator:
 >>> :t (&&)
-<INSERT THE RESULT INSTEAD OF THE TEXT>
+(&&) :: Bool -> Bool -> Bool
 
 Addition of two numbers:
 >>> :t (+)
-<INSERT THE RESULT INSTEAD OF THE TEXT>
+(+) :: Num a => a -> a -> a
 
 Maximum of two values:
 >>> :t max
-<INSERT THE RESULT INSTEAD OF THE TEXT>
+max :: Ord a => a -> a -> a
 
 You might not understand each type at this moment, but don't worry! You've only
 started your Haskell journey. Types will become your friends soon.
