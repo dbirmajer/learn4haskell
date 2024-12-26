@@ -209,15 +209,17 @@ So, the output in this example means that 'False' has type 'Bool'.
 > Try to guess first and then compare your expectations with GHCi output
 
 >>> :t True
-<INSERT THE RESULT INSTEAD OF THE TEXT>
+True :: Bool
+
 >>> :t 'a'
-<INSERT THE RESULT INSTEAD OF THE TEXT>
+'a' :: Char
+
 >>> :t 42
-<INSERT THE RESULT INSTEAD OF THE TEXT>
+42 :: Num a => a
 
 A pair of boolean and char:
 >>> :t (True, 'x')
-<INSERT THE RESULT INSTEAD OF THE TEXT>
+(True, 'x') :: (Bool, Char)
 
 Boolean negation:
 >>> :t not
