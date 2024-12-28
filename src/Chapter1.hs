@@ -575,7 +575,13 @@ True
 >>> isVowel 'x'
 False
 -}
-isVowel c = error "isVowel: not implemented!"
+isVowel :: Char -> Bool
+isVowel 'a' = True
+isVowel 'e' = True
+isVowel 'i' = True
+isVowel 'o' = True
+isVowel 'u' = True
+isVowel _  = False
 
 
 {- |
@@ -639,7 +645,9 @@ Try to introduce variables in this task (either with let-in or where) to avoid
 specifying complex expressions.
 -}
 
-sumLast2 n = error "sumLast2: Not implemented!"
+sumLast2 n = 
+  let lastDigit = mod n 10
+  in lastDigit + mod (div (n - lastDigit) 10) 10
 
 
 {- |
